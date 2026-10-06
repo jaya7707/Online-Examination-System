@@ -1,4 +1,4 @@
-# Online Examination System
+# Online Examination System - Main Version
 
 This project is developed as part of SWE4008 ELA.
 
