@@ -1,0 +1,6 @@
+Online Examination Module
+
+- Create examination
+- Add questions
+- Set examination duration
+- Submit examination
