@@ -4,3 +4,5 @@ Online Examination Module
 - Add questions
 - Set examination duration
 - Submit examination
+
+Exam status: Working correctly
