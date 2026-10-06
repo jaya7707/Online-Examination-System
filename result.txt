@@ -1,0 +1,5 @@
+Result Management
+
+- Calculate marks
+- Display score
+- Store examination result
