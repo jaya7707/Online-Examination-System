@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPortal | Examination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-card exam-card">
+        <h1>Online Examination</h1>
+        <p class="subtitle">Computer Science Fundamentals</p>
+        <p id="studentInfo"></p>
+
+        <div class="exam-header">
+            <span id="questionCount">Question 1 of 5</span>
+            <span id="timer">05:00</span>
+        </div>
+
+        <form id="examForm">
+            <h3 id="questionText"></h3>
+            <div id="options"></div>
+
+            <p id="examMessage" role="status"></p>
+
+            <div class="exam-actions">
+                <button type="button" id="previousBtn">Previous</button>
+                <button type="button" id="nextBtn">Next</button>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Examination</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
