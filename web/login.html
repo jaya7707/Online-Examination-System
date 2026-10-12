@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPortal | Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-card">
+        <div class="logo">EP</div>
+        <h1>ExamPortal</h1>
+        <p class="subtitle">Sign in to begin your examination</p>
+
+        <form id="loginForm">
+            <label for="username">Student ID</label>
+            <input id="username" type="text"
+                   placeholder="Enter student ID" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password"
+                   placeholder="Enter demo password" required>
+
+            <p id="message" role="alert"></p>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <p class="hint">Demo login: student1 / 1234</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

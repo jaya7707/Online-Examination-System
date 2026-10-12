@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPortal | Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-card">
+        <div class="logo">EP</div>
+        <h1>Examination Results</h1>
+        <p id="studentResult"></p>
+        <h2 id="score"></h2>
+        <p id="percentage"></p>
+        <p id="feedback"></p>
+        <button onclick="window.location.href='login.html'">
+            Back to Login
+        </button>
+    </main>
+
+    <script>
+        const student = sessionStorage.getItem("student");
+        const score = Number(sessionStorage.getItem("examScore"));
+        const total = Number(sessionStorage.getItem("totalQuestions"));
+
+        if (student === null || sessionStorage.getItem("examScore") === null) {
+            document.getElementById("studentResult").textContent =
+                "No completed exam was found.";
+            document.getElementById("score").textContent = "";
+            document.getElementById("percentage").textContent = "";
+            document.getElementById("feedback").textContent =
+                "Please log in and complete the examination first.";
+        } else {
+            const percentage = total > 0 ? (score / total) * 100 : 0;
+
+            document.getElementById("studentResult").textContent =
+                "Student: " + student;
+
+            document.getElementById("score").textContent =
+                `Score: ${score} / ${total}`;
+
+            document.getElementById("percentage").textContent =
+                `Percentage: ${percentage.toFixed(2)}%`;
+
+            document.getElementById("feedback").textContent =
+                percentage >= 40 ? "Result: Pass" : "Result: Keep Practicing";
+        }
+    </script>
+</body>
+</html>
