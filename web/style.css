@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf2ff, #f7f9ff);
+    color: #18233c;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 410px;
+    background: white;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px #1c37651a;
+}
+
+.logo {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #2457d6;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.subtitle, .hint {
+    color: #65718a;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4e2;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2457d6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1945b5;
+}
+
+#message {
+    color: #c62828;
+    font-size: 14px;
+}
+
+.hint {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.exam-card {
+    max-width: 680px;
+}
+
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px;
+    margin: 20px 0;
+    background: #eef3ff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#timer {
+    color: #2457d6;
+}
+
+#options {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 13px;
+    border: 1px solid #d5ddec;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option input {
+    width: auto;
+}
+
+.exam-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.exam-actions button {
+    flex: 1;
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
