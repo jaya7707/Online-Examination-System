@@ -1,14 +1,16 @@
 
 public class LoginValidator {
 
-    public static boolean isValidPassword(String password) {
-        if (password == null || password.isEmpty()) {
-            return false;
-        }
-
-        // Initial rule: password must contain exactly 4 digits.
-        return password.matches("\\d{4}");
+    
+public static boolean isValidPassword(String password) {
+    if (password == null) {
+        return false;
     }
+
+    // Developer B requires exactly 6 numeric digits.
+    return password.matches("\\d{6}");
+}
+
 
     public static void main(String[] args) {
         String[] testPasswords = {
