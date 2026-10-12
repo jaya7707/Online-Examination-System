@@ -2,14 +2,17 @@
 public class LoginValidator {
 
     
+
 public static boolean isValidPassword(String password) {
     if (password == null) {
         return false;
     }
 
-    // Developer B requires exactly 6 numeric digits.
-    return password.matches("\\d{6}");
+    // Common rule agreed upon after resolving the conflict:
+    // accept exactly 4 or 6 numeric digits.
+    return password.matches("\\d{4}|\\d{6}");
 }
+
 
 
     public static void main(String[] args) {
