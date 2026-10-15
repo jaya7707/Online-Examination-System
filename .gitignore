@@ -1,2 +1,7 @@
 
 *.class
+# Maven build output
+target/
+
+# Compiled Java files
+*.class
