@@ -37,5 +37,12 @@ pipeline {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                bat 'docker version'
+                bat 'docker build -t online-exam-portal:%BUILD_NUMBER% -t online-exam-portal:latest .'
+            }
+        }
     }
 }
