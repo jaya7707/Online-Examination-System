@@ -40,9 +40,9 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker version'
-                bat 'docker build -t online-exam-portal:%BUILD_NUMBER% -t online-exam-portal:latest .'
+                bat '"C:\\Users\\Jaaya\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" version'
+                bat '"C:\\Users\\Jaaya\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t online-exam-portal:%BUILD_NUMBER% -t online-exam-portal:latest .'
             }
-        }
+}
     }
 }
